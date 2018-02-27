@@ -5,15 +5,20 @@
   
 
   
-  <title>归档 | 耿的个人博客</title>
+  <title>WebSocket学习整理 | 耿的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="耿的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="基础概念简单的小例子,使用spring boot搭建的后台WebSocket下客户端身份确认,实现思路1、客户端通过用户名密码调用服务端的接口来获取角色Token2、链接websoket时带上此Token（ws://localhost:8080?token=Token）3、websoket服务端建立连接时验证此Token是否有效，无效则连接失败4、有效，通过Token中的数据来设置此连接的一些信息">
+<meta name="keywords" content="WebSocket">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WebSocket学习整理">
+<meta property="og:url" content="http://yoursite.com/2018/02/27/WebSocket学习整理/index.html">
 <meta property="og:site_name" content="耿的个人博客">
+<meta property="og:description" content="基础概念简单的小例子,使用spring boot搭建的后台WebSocket下客户端身份确认,实现思路1、客户端通过用户名密码调用服务端的接口来获取角色Token2、链接websoket时带上此Token（ws://localhost:8080?token=Token）3、websoket服务端建立连接时验证此Token是否有效，无效则连接失败4、有效，通过Token中的数据来设置此连接的一些信息">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-27T08:50:14.063Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="耿的个人博客">
+<meta name="twitter:title" content="WebSocket学习整理">
+<meta name="twitter:description" content="基础概念简单的小例子,使用spring boot搭建的后台WebSocket下客户端身份确认,实现思路1、客户端通过用户名密码调用服务端的接口来获取角色Token2、链接websoket时带上此Token（ws://localhost:8080?token=Token）3、websoket服务端建立连接时验证此Token是否有效，无效则连接失败4、有效，通过Token中的数据来设置此连接的一些信息">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -56,59 +61,54 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/27/WebSocket学习整理/" class="archive-article-date">
-  <time datetime="2018-02-27T08:24:42.000Z" itemprop="datePublished">2月 27</time>
+        <section id="main"><article id="post-WebSocket学习整理" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/27/WebSocket学习整理/" class="article-date">
+  <time datetime="2018-02-27T08:24:42.000Z" itemprop="datePublished">2018-02-27</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/WebSocket学习整理/">WebSocket学习整理</a>
+    <h1 class="article-title" itemprop="name">
+      WebSocket学习整理
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/02/26/hexo学习整理/" class="archive-article-date">
-  <time datetime="2018-02-26T09:19:08.000Z" itemprop="datePublished">2月 26</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/26/hexo学习整理/">hexo学习整理</a>
-    </h1>
-  
+        <p><a href="http://www.runoob.com/html/html5-websocket.html" target="_blank" rel="noopener">基础概念</a><br><a href="https://www.cnblogs.com/bianzy/p/5822426.html" target="_blank" rel="noopener">简单的小例子,使用spring boot搭建的后台</a><br>WebSocket下客户端身份确认,实现思路<br>1、客户端通过用户名密码调用服务端的接口来获取角色Token<br>2、链接websoket时带上此Token（ws://localhost:8080?token=Token）<br>3、websoket服务端建立连接时验证此Token是否有效，无效则连接失败<br>4、有效，通过Token中的数据来设置此连接的一些信息（比如：用户ID类似的）<br>5、以后客户端发送请求使用此连接<br><a href="http://blog.csdn.net/qq_33171970/article/details/55001587" target="_blank" rel="noopener">可参考的实现方法</a></p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/27/WebSocket学习整理/" data-id="cje5dzacf0000x0i4kj6ab4x7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebSocket/">WebSocket</a></li></ul>
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/02/26/hexo学习整理/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo学习整理</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
