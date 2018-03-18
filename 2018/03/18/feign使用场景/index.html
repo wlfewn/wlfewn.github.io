@@ -5,20 +5,20 @@
   
 
   
-  <title>hexo学习整理 | 耿的个人博客</title>
+  <title>feign使用 | 耿的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo入门,两篇博客，讲得很详细使用Hexo+Github一步步搭建属于自己的博客（基础）使用Hexo+Github一步步搭建属于自己的博客（进阶）Markdown语法 感觉挺详细的">
-<meta name="keywords" content="hexo,nodeJs">
+  <meta name="description" content="1、使用场景在微服务架构中，服务的请求者以何种方式调用远程服务是一项必须要解决的问题。在Spring Cloud(Netflix)技术栈中，每个微服务是以HTTP REST接口的形式暴露的，这样在执行远程调用时，正常情况下需要使用一个HTTP客户端，然后向服务发起HTTP请求。实际上，如果使用Netflix的Feign作为Http Client的话，我们就可以做到像Dubbo一样，服务的调用者直接">
+<meta name="keywords" content="java,spring">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo学习整理">
-<meta property="og:url" content="http://yoursite.com/2018/02/26/hexo学习整理/index.html">
+<meta property="og:title" content="feign使用">
+<meta property="og:url" content="http://yoursite.com/2018/03/18/feign使用场景/index.html">
 <meta property="og:site_name" content="耿的个人博客">
-<meta property="og:description" content="hexo入门,两篇博客，讲得很详细使用Hexo+Github一步步搭建属于自己的博客（基础）使用Hexo+Github一步步搭建属于自己的博客（进阶）Markdown语法 感觉挺详细的">
+<meta property="og:description" content="1、使用场景在微服务架构中，服务的请求者以何种方式调用远程服务是一项必须要解决的问题。在Spring Cloud(Netflix)技术栈中，每个微服务是以HTTP REST接口的形式暴露的，这样在执行远程调用时，正常情况下需要使用一个HTTP客户端，然后向服务发起HTTP请求。实际上，如果使用Netflix的Feign作为Http Client的话，我们就可以做到像Dubbo一样，服务的调用者直接">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-26T13:41:18.167Z">
+<meta property="og:updated_time" content="2018-03-18T15:11:11.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo学习整理">
-<meta name="twitter:description" content="hexo入门,两篇博客，讲得很详细使用Hexo+Github一步步搭建属于自己的博客（基础）使用Hexo+Github一步步搭建属于自己的博客（进阶）Markdown语法 感觉挺详细的">
+<meta name="twitter:title" content="feign使用">
+<meta name="twitter:description" content="1、使用场景在微服务架构中，服务的请求者以何种方式调用远程服务是一项必须要解决的问题。在Spring Cloud(Netflix)技术栈中，每个微服务是以HTTP REST接口的形式暴露的，这样在执行远程调用时，正常情况下需要使用一个HTTP客户端，然后向服务发起HTTP请求。实际上，如果使用Netflix的Feign作为Http Client的话，我们就可以做到像Dubbo一样，服务的调用者直接">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -61,14 +61,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hexo学习整理" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-feign使用场景" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/02/26/hexo学习整理/" class="article-date">
-  <time datetime="2018-02-26T09:19:08.000Z" itemprop="datePublished">2018-02-26</time>
+    <a href="/2018/03/18/feign使用场景/" class="article-date">
+  <time datetime="2018-03-18T04:33:34.000Z" itemprop="datePublished">2018-03-18</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
+    <a class="article-category-link" href="/categories/微服务/">微服务</a>
   </div>
 
   </div>
@@ -79,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo学习整理
+      feign使用
     </h1>
   
 
@@ -87,15 +87,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hexo入门,两篇博客，讲得很详细<br><a href="https://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">使用Hexo+Github一步步搭建属于自己的博客（基础）</a><br><a href="http://www.cnblogs.com/fengxiongZz/p/7707568.html" target="_blank" rel="noopener">使用Hexo+Github一步步搭建属于自己的博客（进阶）</a><br><a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">Markdown语法</a> 感觉挺详细的</p>
+        <p>1、使用场景<br>在微服务架构中，服务的请求者以何种方式调用远程服务是一项必须要解决的问题。在Spring Cloud(Netflix)技术栈中，每个微服务是以HTTP REST接口的形式暴露的，这样在执行远程调用时，正常情况下需要使用一个HTTP客户端，然后向服务发起HTTP请求。实际上，如果使用Netflix的Feign作为Http Client的话，我们就可以做到像Dubbo一样，服务的调用者直接调用接口方法调用远程服务，而不需要通过常规的Http Client构造请求再解析返回数据(原话出处：<a href="http://blog.csdn.net/neosmith/article/details/52180852" target="_blank" rel="noopener">http://blog.csdn.net/neosmith/article/details/52180852</a>)<br>使用feign还有另外一个重要原因：通过feign调用其他远程服务，只需少量的代码即可完成，并且实现了负载均衡。<br>2、使用<br>官网 <a href="http://cloud.spring.io/spring-cloud-static/Dalston.SR5/single/spring-cloud.html#spring-cloud-feign" target="_blank" rel="noopener">http://cloud.spring.io/spring-cloud-static/Dalston.SR5/single/spring-cloud.html#spring-cloud-feign</a><br>别人整理 <a href="http://blog.csdn.net/Hzt_fighting_up/article/details/78248720" target="_blank" rel="noopener">http://blog.csdn.net/Hzt_fighting_up/article/details/78248720</a><br>3、源码解析，参考 <a href="http://blog.csdn.net/forezp/article/details/73480304" target="_blank" rel="noopener">http://blog.csdn.net/forezp/article/details/73480304</a><br>4、个人实现的简单学习demo <a href="https://github.com/wlfewn/study-demo/tree/master/cloud-session-feign-demo" target="_blank" rel="noopener">https://github.com/wlfewn/study-demo/tree/master/cloud-session-feign-demo</a><br>5、问题总结<br>1.如果http请求的header信息无法传递，参考 <a href="http://blog.csdn.net/u014519194/article/details/77160958" target="_blank" rel="noopener">http://blog.csdn.net/u014519194/article/details/77160958</a><br>2.对于需要使用@FeignClient的项目，一定要使用@EnableFeignClients显示声明,通过源码可知<br>3.同时使用spring session与feign，使用feign的项目同样需要引入spring session，否则会出现一种每次session id不一致的情况</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/26/hexo学习整理/" data-id="cjewt36y800017si4up46yxdv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/18/feign使用场景/" data-id="cjewt36xv00007si4ui74jy7m" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodeJs/">nodeJs</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/">spring</a></li></ul>
 
     </footer>
   </div>
@@ -103,15 +103,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/02/27/WebSocket学习整理/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          WebSocket学习整理
-        
-      </div>
-    </a>
   
+    <a href="/2018/03/12/spring-boot集成spring-session/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">spring boot集成spring session</div>
+    </a>
   
 </nav>
 

@@ -58,6 +58,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-feign使用场景" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/18/feign使用场景/" class="article-date">
+  <time datetime="2018-03-18T04:33:34.000Z" itemprop="datePublished">2018-03-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/微服务/">微服务</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/18/feign使用场景/">feign使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、使用场景<br>在微服务架构中，服务的请求者以何种方式调用远程服务是一项必须要解决的问题。在Spring Cloud(Netflix)技术栈中，每个微服务是以HTTP REST接口的形式暴露的，这样在执行远程调用时，正常情况下需要使用一个HTTP客户端，然后向服务发起HTTP请求。实际上，如果使用Netflix的Feign作为Http Client的话，我们就可以做到像Dubbo一样，服务的调用者直接调用接口方法调用远程服务，而不需要通过常规的Http Client构造请求再解析返回数据(原话出处：<a href="http://blog.csdn.net/neosmith/article/details/52180852" target="_blank" rel="noopener">http://blog.csdn.net/neosmith/article/details/52180852</a>)<br>使用feign还有另外一个重要原因：通过feign调用其他远程服务，只需少量的代码即可完成，并且实现了负载均衡。<br>2、使用<br>官网 <a href="http://cloud.spring.io/spring-cloud-static/Dalston.SR5/single/spring-cloud.html#spring-cloud-feign" target="_blank" rel="noopener">http://cloud.spring.io/spring-cloud-static/Dalston.SR5/single/spring-cloud.html#spring-cloud-feign</a><br>别人整理 <a href="http://blog.csdn.net/Hzt_fighting_up/article/details/78248720" target="_blank" rel="noopener">http://blog.csdn.net/Hzt_fighting_up/article/details/78248720</a><br>3、源码解析，参考 <a href="http://blog.csdn.net/forezp/article/details/73480304" target="_blank" rel="noopener">http://blog.csdn.net/forezp/article/details/73480304</a><br>4、个人实现的简单学习demo <a href="https://github.com/wlfewn/study-demo/tree/master/cloud-session-feign-demo" target="_blank" rel="noopener">https://github.com/wlfewn/study-demo/tree/master/cloud-session-feign-demo</a><br>5、问题总结<br>1.如果http请求的header信息无法传递，参考 <a href="http://blog.csdn.net/u014519194/article/details/77160958" target="_blank" rel="noopener">http://blog.csdn.net/u014519194/article/details/77160958</a><br>2.对于需要使用@FeignClient的项目，一定要使用@EnableFeignClients显示声明,通过源码可知<br>3.同时使用spring session与feign，使用feign的项目同样需要引入spring session，否则会出现一种每次session id不一致的情况</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/18/feign使用场景/" data-id="cjewt36xv00007si4ui74jy7m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/">spring</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-spring-boot集成spring-session" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/12/spring-boot集成spring-session/" class="article-date">
@@ -91,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/12/spring-boot集成spring-session/" data-id="cjev2amgf000hg4i4gsats956" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/12/spring-boot集成spring-session/" data-id="cjewt3707000m7si4uemfe3gu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/">spring</a></li></ul>
@@ -134,7 +177,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/05/2018-3-5记录/" data-id="cjev2ameq0000g4i4bwz8t06p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/05/2018-3-5记录/" data-id="cjewt36yy00057si4lncbnqwb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础知识/">基础知识</a></li></ul>
@@ -173,7 +216,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/27/WebSocket学习整理/" data-id="cjev2amfe0004g4i4ne9gtof5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/27/WebSocket学习整理/" data-id="cjewt36ys00047si4hypa1hu4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebSocket/">WebSocket</a></li></ul>
@@ -216,7 +259,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/26/hexo学习整理/" data-id="cjev2amf20001g4i41xvr50yr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/02/26/hexo学习整理/" data-id="cjewt36y800017si4up46yxdv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodeJs/">nodeJs</a></li></ul>
@@ -238,7 +281,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/后端/">后端</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/后端/">后端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/微服务/">微服务</a></li></ul>
     </div>
   </div>
 
@@ -258,7 +301,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/WebSocket/" style="font-size: 10px;">WebSocket</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/nodeJs/" style="font-size: 10px;">nodeJs</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/基础知识/" style="font-size: 10px;">基础知识</a>
+      <a href="/tags/WebSocket/" style="font-size: 10px;">WebSocket</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/nodeJs/" style="font-size: 10px;">nodeJs</a> <a href="/tags/spring/" style="font-size: 15px;">spring</a> <a href="/tags/基础知识/" style="font-size: 10px;">基础知识</a>
     </div>
   </div>
 
@@ -278,6 +321,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/03/18/feign使用场景/">feign使用</a>
+          </li>
         
           <li>
             <a href="/2018/03/12/spring-boot集成spring-session/">spring boot集成spring session</a>
