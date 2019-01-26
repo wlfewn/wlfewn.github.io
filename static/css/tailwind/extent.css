@@ -1,0 +1,12 @@
+/** 扩展 tailwind,支持屏幕较小的移动设备 */
+@media (max-width: 576px) {
+  .min\:w-5\/6 {
+    width: 83.33333%;
+  }
+  .min\:mt-2 {
+    margin-top: 0.5rem;
+  }
+  .min\:px-2 {
+    padding: 0.5rem 0;
+  }
+}
